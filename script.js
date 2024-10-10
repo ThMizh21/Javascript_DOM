@@ -24,10 +24,11 @@ butto.addEventListener("click", () => {
 });
 
 butt.addEventListener("click", () => {
-    const newPar = document.createElement("p");
-    newPar.textContent= "This is the third paragraph";
-    container.appendChild(newPar);
+    const paras = document.querySelectorAll("p");
+    if (paras.length > 0) {
+        paras[paras.length - 1].remove();
+    }  
+   
 
 });
-
 
