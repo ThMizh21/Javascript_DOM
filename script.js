@@ -14,7 +14,8 @@ setInterval(color,3000)
 
 const container = document.getElementById("header");
 const butto = document.getElementById("c");
-const butt =document.getElementById("d")
+const butt =document.getElementById("d");
+const but =document.getElementById("e");
 
 butto.addEventListener("click", () => {
     const newPar = document.createElement("p");
@@ -30,5 +31,24 @@ butt.addEventListener("click", () => {
     }  
    
 
+});
+
+butt.addEventListener("click", () => {
+    butt.disabled=true;
+    const paras = document.querySelectorAll("p");
+    if (paras.length > 0) {
+        paras[paras.length - 1].remove();
+    }  
+   
+
+});
+
+
+
+but.addEventListener("click", () => {
+    const par = document.querySelector("p");
+    if (par.style.background==="") {
+        par.style.background = "yellow"; 
+    }
 });
 
