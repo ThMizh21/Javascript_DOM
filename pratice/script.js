@@ -24,14 +24,7 @@ butto.addEventListener("click", () => {
 
 });
 
-butt.addEventListener("click", () => {
-    const paras = document.querySelectorAll("p");
-    if (paras.length > 0) {
-        paras[paras.length - 1].remove();
-    }  
-   
 
-});
 
 butt.addEventListener("click", () => {
     butt.disabled=true;
