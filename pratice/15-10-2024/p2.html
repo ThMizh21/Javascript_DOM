@@ -18,7 +18,7 @@
         const button = document.getElementById("hideBoxesButton");
 
         button.addEventListener("click",()=>{
-           while(box[0]){
+           while(box.length>0){
             box[0].remove();
            }
         });

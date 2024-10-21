@@ -6,19 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="heading">HELLO WORLD</h1>
+    <h1>HELLO WORLD</h1>
     <div>
         <p>Hi Buddy </p>
         <p>hi bud</p>
         <button class="show">click</button>
+        <button class="show">click</button>
+
     </div>
     <script>
-        const head = document.getElementById("heading");
+        const head = document.querySelector("h1");
+        const para = document.querySelectorAll("p");
         const button =document.getElementsByClassName("show");
-button[0].addEventListener("click", ()=>{
-    alert(head.textContent);
-});
-alert("welcome");
+         
+        button[0].addEventListener("click", () =>{
+     alert(head.textContent);
+ });
+alert(head.textContent);
 
     </script>
 </body>

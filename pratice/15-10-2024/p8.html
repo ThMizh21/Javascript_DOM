@@ -9,17 +9,17 @@
     <title>Add List Item</title>
 </head>
 <body>
-    <input type="text" id="newItem" placeholder="Add a new item" />
+    <input type="text" id="newItem" placeholder="Add a new item" /> 
     <button id="addItemButton">Add Item</button>
     <ul id="itemList"></ul>
-    <script>
+    <script >
          const button=document.getElementById("addItemButton");
-        button.addEventListener("click",function(){
-            const newItem=document.getElementById("newItem").value;
+        button.addEventListener("click",() =>{
+            const newItem=document.getElementById("newItem").value; //newItem = HI
             if(newItem){
-                const listItem=document.createElement("li");
-                listItem.textContent=newItem;
-                document.querySelector("#itemList").appendChild(listItem);
+                const listItem=document.createElement("li");//(li)
+                listItem.textContent=newItem;//li=HI
+                document.getElementById("itemList").appendChild(listItem);
                 document.getElementById("newItem").value = "";
             }
 

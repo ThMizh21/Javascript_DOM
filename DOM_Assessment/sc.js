@@ -29,8 +29,7 @@ remove.addEventListener("click", () => {
 link.addEventListener("click",()=>{
     
     let a = document.createElement('a');
-    let link = document.createTextNode("Hi There");
-    a.appendChild(link);
+    a.textContent = "Hi thre...";
     a.href = "https://www.geeksforgeeks.org";
     document.body.appendChild(a);
 
