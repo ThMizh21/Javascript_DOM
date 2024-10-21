@@ -11,7 +11,10 @@ form.addEventListener("submit", (event)=>{
  ageError.textContent = "";
  salaryError.textContent = "";
   if(nam.validity.valid){
- if(!(nam.value.length>=3 && nam.value.length <=30) ){
+    if(nam.value===""){
+        nameError.textContent = "Enter a valid employee name!";
+    }
+    else if(!(nam.value.length>=3 && nam.value.length <=30) ){
         nameError.textContent = "Name must be between 3 and 30 characters.";
     }
     }
